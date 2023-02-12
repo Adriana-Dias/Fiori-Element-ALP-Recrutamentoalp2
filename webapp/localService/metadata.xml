@@ -40,6 +40,7 @@
                 <Property Name="descr" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:display-format="UpperCase" sap:label="Descrição Vaga"/>
                 <Property Name="nivel" Type="Edm.String" MaxLength="20" sap:aggregation-role="dimension" sap:display-format="UpperCase" sap:label="Nível"/>
                 <Property Name="salario" Type="Edm.Decimal" Precision="14" Scale="3" sap:aggregation-role="measure" sap:label="Montante" sap:quickinfo="Montante de rubrica salarial para pagamentos" sap:filterable="false"/>
+                <Property Name="qtd" Type="Edm.Int32" sap:aggregation-role="dimension"/>
             </EntityType>
             <EntityContainer Name="ZA_FE50_RECRUTAMENTO_CDS_Entities" m:IsDefaultEntityContainer="true" sap:message-scope-supported="true" sap:supported-formats="atom json xlsx">
                 <EntitySet Name="ZA_FE50_RECRUTAMENTO" EntityType="ZA_FE50_RECRUTAMENTO_CDS.ZA_FE50_RECRUTAMENTOType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
